@@ -18,178 +18,149 @@
   ],
   "CoreAbilities": [
     {
-      "Regex": "^Agile$",
-      "Description": "This vehicle may make an additional 45 degree pivot during either their Move or Advance action."
+      "Regex": "^Deadly Demise",
+      "Description": "This ability always takes the form\nDeadly Demise X. Each time a model\nin this unit is destroyed, after the units\nembarked within it (if any) have made\ntheir emergency disembark moves,\nroll one D6. On a 6, that model suffers\na deadly demise; each unit within\n6\" of that model suffers a number of\nmortal wounds denoted by X (if this is a\nrandom number, roll separately for each\nunit within 6\")."
     },
     {
-      "Regex": "^Flying$",
-      "Description": "Models with this rule are not affected by intervening terrain or models when they move, so long as they finish their move in an allowed position. These models ignore any penalties for changing height levels."
+      "Regex": "^Deep Strike",
+      "Description": "Each time this unit makes an ingress\nmove (20.04), if every model in this unit\nhas this ability, it can be set up anywhere\non the battlefield that is more than\n8\" horizontally from all enemy units,\neven if that is within your opponent’s\ndeployment zone."
     },
     {
-      "Regex": "^Heavy\\ Armour\\ (?<value>\\d+)$",
-      "Description": "Reduce the piercing value of attacks made against this model by {value} to a minimum of 0."
+      "Regex": "^Leader",
+      "Description": "Before the battle, in the Muster Armies step, for each leader\nand support unit in your army, you can select one friendly\nbodyguard unit that unit can lead. That unit will then lead that\nbodyguard unit for the battle and form an attached unit with it.\nUnless otherwise stated, each bodyguard unit can only have one\nleader unit and one support unit attached to it."
     },
     {
-      "Regex": "^Large$",
-      "Description": "This model counts as 2 models for calculating how many models a Transport can carry."
+      "Regex": "^Hover$",
+      "Description": "Each time this unit takes to the skies\n(21.03), do not subtract 2\" from the\nmaximum distance."
+    }, 
+    {
+      "Regex": "^Scout \\ (?<value>\\d+)",
+      "Description": "This ability always takes the form\nScouts X\". In the Resolve Pre‑battle\nAbilities step, if every model in a unit\nhas this ability, you can do one of\nthe following:\n▪ If that unit is in strategic reserves, you\ncan set up that unit anywhere that is\nwholly within your deployment zone.\n▪ If that unit is wholly within your\ndeployment zone, it can make a\nscout move (see below).\n▪ If that unit is embarked within a\nDEDICATED TRANSPORT that is wholly\nwithin your deployment zone, and if\nevery model embarked within that\nDEDICATED TRANSPORT has the Scouts\nability, that DEDICATED TRANSPORT can\nmake a scout move."
     },
     {
-      "Regex": "^Non\\-Scoring$",
-      "Description": "This unit cannot perform the Secure action."
-    },
-    {
-      "Regex": "^Platform\\ (?<value>\\d+)$",
-      "Description": "When taking an attack action this model may make attacks with {value} weapons it is equipped with instead of 1."
-    },
-    {
-      "Regex": "^Resilient$",
-      "Description": "This model may re-roll any failed Defence Rolls."
-    },
-    {
-      "Regex": "^Rugged$",
-      "Description": "This model ignores the penalty for travelling through rough terrain."
-    },
-    {
-      "Regex": "^Shields$",
-      "Description": "While this model has it's full Hit Points it may re-roll failed attempts to Counter Damage."
-    },
-    {
-      "Regex": "^Skilled$",
-      "Description": "This model may re-roll any failed Attack Rolls."
-    },
-    {
-      "Regex": "^Steady$",
-      "Description": "This model ignores the Heavy special rule."
-    },
-    {
-      "Regex": "^Stealth\\ (?<value>\\d+)$",
-      "Description": "Attacks against this model from more than {value} inches away suffer -1 to their attack rolls."
+      "Regex": "^Stealth$",
+      "Description": "If every model in a unit has this ability,\neach time a ranged attack targets that\nunit, that unit has the benefit of cover\nagainst that attack (13.08)."
     },
     {
       "Regex": "^Support$",
-      "Description": "Models with this rule do not need to be deployed on the first turn and may instead be held in reserve in subsequent turns. These models must be deployed in the second or third turn."
+      "Description": "Before the battle, in the Muster Armies step, for each leader\nand support unit in your army, you can select one friendly\nbodyguard unit that unit can lead. That unit will then lead that\nbodyguard unit for the battle and form an attached unit with it.\nUnless otherwise stated, each bodyguard unit can only have one\nleader unit and one support unit attached to it."
     },
     {
-      "Regex": "^Transport\\ (?<value>\\d+)$",
-      "Description": "A vehicle with capacity for {value} models. Other Vehicles and Transports cannot embark; Large models count as two. A whole unit within 1 inch may Embark if it fits; remove it to reserve. An embarked unit with Command Points remaining may activate to Disembark, using the transport as its Entry Point and deploying up to its Movement in inches away. It cannot Move or Advance in that activation; unplaceable models are destroyed. Units may start the game embarked. If the transport is destroyed, place passengers as close as possible in formation and reduce them to 0 Command Points; unplaceable models are destroyed. Vehicle rules also apply. See Cadence Advanced Rules: Vehicles and Transports for full details."
-    },
-    {
-      "Regex": "^Weak\\ Spot\\ (?<value>[^)]+)$",
-      "Description": "Against attacks which originate in the named arc {value}, this model has -1 to its Counter Rolls."
-    },
-    {
-      "Regex": "^Vehicle$",
-      "Description": "Vehicles move directly forward or backward. During a Move or Advance action they may pivot up to twice, each by up to 45 degrees, with at least 1 inch of movement between pivots. Vehicles cannot cross another model’s base, and friendly models cannot cross theirs. Climbable terrain is impassable, and terrain Cover gives no benefit. Vehicles ignore Heavy; attacks against them treat obscured line of sight as clear. Unless stated otherwise they have Platform 2 (attack with two weapons) and Weak Spot Rear (-1 to Counter Rolls against attacks from the rear). See Cadence Advanced Rules: Vehicles and Transports for full details."
-    },
-    {
-      "Regex": "^Cowardly$",
-      "Description": "This unit has -1 to all Morale tests."
-    },
-    {
-      "Regex": "^Heroic$",
-      "Description": "This unit may re-roll failed morale tests."
-    },
-    {
-      "Regex": "^Unbreakable$",
-      "Description": "This unit automatically passes morale tests."
-    },
-    {
-      "Regex": "^Reanimation(?: \\(1 Cmd\\))?$",
-      "Description": "Ability (1 Command Point): This model chooses a friendly Warrior Host or Protean Adapt unit within 3 inches and rolls a d6. On a roll of a 3+ the unit may restore a lost hit point to one of its models, or if there are no models with reduced hit points, it may restore 1 destroyed model to the unit with 1 hit point remaining. This model must be placed in formation and within 3 inches of this unit."
-    },
-    {
-      "Regex": "^Regeneration$",
-      "Description": "At the end of its activation this model may roll a d6, on a roll of 6+ this model recovers 1 lost hit point."
-    },
-    {
-      "Regex": "^Swarm\\ Leader$",
-      "Description": "Friendly models within 6 inches of this model automatically pass Morale Tests."
-    },
-    {
-      "Regex": "^Psionic\\ Field$",
-      "Description": "This model always passes a Defence Roll on a physical roll of a 6 regardless of modifiers."
+      "Regex": "^Super Heavy Walker$",
+      "Description": "Each time a unit with this ability makes a\nnormal, advance or fall-back move:\n▪ Models in that unit can move through\nmodels (including MONSTER/VEHICLE\nmodels, but excluding TITANIC\nmodels) and can move horizontally\nthrough sections of terrain features\nthat are 4\" or less in height.\n▪ Before moving that unit, you can\nselect for all models in that unit to\nhave the MOBILE keyword until that\nmove ends. If you do, when that move\nends, roll one D6: on a 1, that unit\nis battle-shocked."
     }
   ],
   "WeaponAbilities": [
     {
-      "Regex": "^Accurate$",
-      "Description": "When making an attack with this weapon your attack roll has a +1 modifier."
-    },
-    {
-      "Regex": "^Arc\\ (?<value>[^)]+)$",
-      "Description": "Attacks with this weapon can only target models in the named arc ({value})."
+      "Regex": "^Anti x$",
+      "Description": "This ability always takes the form\n[ANTI‑X Y+]. Each time an attack is\nmade with an [ANTI] weapon, if the\ntarget unit has the keyword denoted by\nX, an unmodified wound roll of Y+ is a\ncritical wound. "
     },
     {
       "Regex": "^Assault$",
-      "Description": "This weapon does not suffer from the Rush Penalty or Close Range Penalty or when making attacks."
+      "Description": "Units containing one or more models\nwith an [ASSAULT] weapon can shoot\nusing assault shooting (10.05)."
     },
     {
       "Regex": "^Blast\\ (?<value>\\d+)$",
-      "Description": "If this weapon has at least one successful hit then it also counts as doing {value} hits to every other model, enemy or friendly, within 2 inches of the center of the original targets base."
+      "Description": "Each time you gather attack dice for a\n[BLAST] weapon, add one additional\nattack dice for every five models that\nwere in the target unit in the Select\nTargets step (rounding down).\nIf this ability takes the form [BLAST X],\neach time you gather attack dice for such\na weapon, add X additional attack dice\nfor every five models that were in the\ntarget unit in the Select Targets step\n(rounding down) instead."
     },
     {
-      "Regex": "^Destructive\\ (?<value>\\d+)$",
-      "Description": "Each failed Defence Roll against this weapon causes {value} damage instead of 1."
+      "Regex": "^Cleave\\ (?<value>\\d+)$",
+      "Description": "This ability always takes the form\n[CLEAVE X]. Each time you gather\nattack dice for a [CLEAVE] weapon, if\nyou only selected one target for all of\nthat weapon’s attacks, add X additional\nattack dice for every five models that\nwere in the target unit in the Select\nTargets step (rounding down)."
     },
     {
-      "Regex": "^Fixed$",
-      "Description": "Attacks with this weapon can only target models that lie directly in the path of this model's forward facing."
+      "Regex": "^Close Quarters$",
+      "Description": "Units containing one or more\nmodels with a [CLOSE‑QUARTERS]\nweapon can shoot using\nclose‑quarters shooting (10.06).\nWhen using another shooting type,\nfor each model in that unit (excluding\nMONSTER/VEHICLE models), you can only\nselect one of the following to make\nattacks with:\n▪ One or more of its\n[CLOSE‑QUARTERS] weapons.\n▪ One or more of its other\nranged weapons."
+    },
+
+    {
+      "Regex": "^Devastating Wounds$",
+      "Description": "Each time an attack made with a\n[DEVASTATING WOUNDS] weapon results\nin a critical wound, the attack sequence\nfor that attack ends and the target unit\nsuffers a number of mortal wounds\nequal to the D characteristic of that\nweapon. These are inflicted after\nresolving any normal damage inflicted by\nthose attacks.\nMortal wounds inflicted by\n[DEVASTATING WOUNDS] weapons can\ndamage a maximum of one model for\neach critical wound; any remaining\nmortal wounds inflicted by that attack\nare lost."
     },
     {
-      "Regex": "^Grenade$",
-      "Description": "Only 1 model in a unit may use a weapon with this rule per Attack Action. This weapon may not target a model closer than 3 inches."
+      "Regex": "^Extra Attacks$",
+      "Description": "Each time a unit containing one or\nmore models with an [EXTRA ATTACKS]\nweapon fights, those models will make\nattacks with those weapons in addition\nto any others. In the Select Weapons step\n(04.01), for each of those models, you\nmust select:\n▪ All of that model’s\n[EXTRA ATTACKS] weapons.\n▪ One of that model’s other melee\nweapons, if possible."
     },
+    {
+      "Regex": "^Feel no pain$",
+      "Description": "This ability always takes the form\nFeel No Pain X+. Each time a model with\nthis ability would lose a wound, roll one\nD6: on an X+, that wound is not lost. "
+    },
+    {
+      "Regex": "^Fights First$",
+      "Description": "While every model in a unit has this\nability, that unit is a Fights First unit.\nSee the Resolve Fights First Combats step\nin the Fight phase (12.04)."
+    },
+    {
+      "Regex": "^Firing Deck$",
+      "Description": "This ability always takes the form\nFiring Deck X. In your Shooting phase,\neach time this TRANSPORT is selected to\nshoot, if one or more units are embarked\nwithin it, resolve the following sequence:\n1. Select up to X models embarked\nwithin this TRANSPORT (excluding\nmodels whose units have already been\nselected to shoot this phase).\n2. For each selected model, select one\nof its ranged weapons (excluding\n[ONE SHOT] weapons).\n3. Until this TRANSPORT has resolved\nall of its attacks, it has all of those\nselected weapons in addition to its\nother weapons.\n4. Until the end of the turn, units\nembarked within this TRANSPORT are\nnot eligible to shoot."
+    },
+    {
+      "Regex": "^Hazardous$",
+      "Description": "Each time a unit is selected to\nshoot or selected to fight, after that unit\nhas resolved all of its attacks, make a\nnumber of hazard rolls (06.03) for that\nunit equal to the number of [HAZARDOUS]\nweapons you selected in the Select\nWeapons step"
+    },
+
     {
       "Regex": "^Heavy$",
-      "Description": "A unit must spend an additional Command Point to use this weapon."
+      "Description": "In your Shooting phase, each time an\nattack is made with a [HEAVY] weapon,\nadd 1 to the hit roll if all of the following\napply to the attacking unit:\n▪ That unit is unengaged.\n▪ That unit was not set up on the\nbattlefield this turn.\n▪ No model in that unit has moved more\nthan 3\" this turn."
+    },
+
+    {
+      "Regex": "^Ignores Cover$",
+      "Description": "Each time an attack is made with an\n[IGNORES COVER] weapon, the target\ncannot have the benefit of cover\nagainst that attack (13.08), including\nfrom rules that give a model or unit the\nbenefit of cover (e.g. Stealth)."
     },
     {
-      "Regex": "^Inaccurate$",
-      "Description": "When making an attack with this weapon your Skill counts as 6+."
+      "Regex": "^Indirect Fire$",
+      "Description": "Units containing one or more models\nwith an [INDIRECT FIRE] weapon can\nshoot using indirect shooting (10.07)."
     },
     {
-      "Regex": "^Indirect$",
-      "Description": "Attacks with this weapon count an obscured line of sight as clear. This supercedes the Stealth special rule."
+      "Regex": "^Infiltrator$",
+      "Description": "During deployment, if every model in\na unit has this ability, it can be set up\nanywhere on the battlefield that is\nmore than 8\" horizontally from your\nopponent’s deployment zone and all\nenemy units."
     },
     {
-      "Regex": "^One[ -]Use$",
-      "Description": "This weapon may only be used once per battle."
+      "Regex": "^Lance$",
+      "Description": "Each time an attack is made with a\n[LANCE] weapon, if the attacking model’s\nunit made a charge move this turn, add 1\nto the wound roll."
     },
     {
-      "Regex": "^Rapid\\ Fire\\ (?<value>\\d+)$",
-      "Description": "This weapon may make {value} additional attacks at no additional Command Point cost. After each attack you may choose the same model as the target for the next attack or another model within 1 inch of the original."
+      "Regex": "^Lethal Hits$",
+      "Description": "Each time an attack made with a\n[LETHAL HITS] weapon results in a\ncritical hit, you can choose for that attack\nto automatically wound the target."
     },
     {
-      "Regex": "^Rending\\ (?<value>\\d+)$",
-      "Description": "When an attack with this weapon hits with a roll of 6, it counts as doing {value} additional hits."
+      "Regex": "^Lone Operative$",
+      "Description": "Unless part of an attached unit, this unit\nis not visible to enemy models unless\nthey are within 12\" of this unit, and it\ncannot be targeted by [INDIRECT FIRE]\nweapons unless the attacking model is\nwithin 12\" of this unit.\nIf this ability takes the form\nLone Operative X\", unless part of an\nattached unit, this unit is not visible to\nenemy models unless they are within X\"\nof this unit, and it cannot be targeted by\n[INDIRECT FIRE] weapons unless the\nattacking model is within X\" of this unit"
     },
     {
-      "Regex": "^Shred$",
-      "Description": "Rolls to Counter Damage have a -1 modifier against weapons with this rule."
+      "Regex": "^Melta (?<value>\\d+)$",
+      "Description": "Each time a model makes\nan attack with a [MELTA] weapon, if\nthe target unit was within half range of\nthat weapon in the Select Targets step,\nuntil the attacking unit’s attacks have\nbeen resolved, add {value} to that weapon’s\nD characteristic. "
+    },
+    {
+      "Regex": "^One Shot$",
+      "Description": "Each weapon with this ability can only\nbe selected to make attacks with once\nper battle.\nIf a destroyed model is returned to a unit,\nall of its [ONE SHOT] weapons that have\nalready been selected to make attacks\nwith during the battle cannot be selected\nto make attacks with again. If a new unit is added to an army, all\n[ONE SHOT] weapons in that unit can\nbe selected to make attacks with once\nper battle"
+    },
+    {
+      "Regex": "^Pistol$",
+      "Description": "[PISTOL] and [CLOSE‑QUARTERS]\nare identical for all rules purposes.\nSee [CLOSE‑QUARTERS]."
+    },
+    {
+      "Regex": "^Precision$",
+      "Description": "While resolving attacks made with one\nor more [PRECISION] weapons, at the\nstart of the Allocation Order step (05.03),\nif the target unit contains one or more\nCHARACTER models visible to one or more\nof the attacking models, the active player\ncan select one allocation group that\ncontains one of those visible CHARACTER\nmodels. If they do, until those attacks are\nresolved, or until that CHARACTER group\nis destroyed (whichever happens first),\nthat CHARACTER group is the current\nallocation group"
+    },
+    {
+      "Regex": "^Psychic$",
+      "Description": "Each time an attack is made with a\n[PSYCHIC] weapon, you can ignore any\nor all modifiers to that attack’s BS or WS\ncharacteristic and any or all modifiers to\nthe hit roll. Attacks made with [PSYCHIC]\nweapons are known as psychic attacks\n(this can be important for the triggering\nof other rules)."
+    },
+    {
+      "Regex": "^Rapid Fire\\ (?<value>\\d+)$",
+      "Description": " Each time you gather\nattack dice for a [RAPID FIRE] weapon,\nadd {value} additional attack dice if the target\nunit was within half range of that weapon\nin the Select Targets step."
+    },
+    {
+      "Regex": "^Sustained Hits\\ (?<value>\\d+)$",
+      "Description": "Each time an attack\nmade with a [SUSTAINED HITS] weapon\nresults in a critical hit, that attack results\nin a number of additional hits on the\ntarget as denoted by {value}. \n"
     },
     {
       "Regex": "^Torrent$",
-      "Description": "An attack with this weapon hits on any attack roll that is not a 1."
+      "Description": "Each time an attack is made with\na [TORRENT] weapon, that attack\nautomatically hits the target."
     },
     {
-      "Regex": "^Volatile$",
-      "Description": "Any attack roll that rolls a 1 counts as hitting the model that made the attack."
-    },
-    {
-      "Regex": "^Volley$",
-      "Description": "Each attack roll that rolls a 6 allows the attacker to roll an additional attack roll, these additional rolls do not generate additional rolls."
-    },
-    {
-      "Regex": "^Long\\ Shot$",
-      "Description": "This weapon may add 8 inches to it's Range but if it does it reduces it's Attacks to 1."
-    },
-    {
-      "Regex": "^Overcharge$",
-      "Description": "This weapon may add 1 to it's Attacks attribute, if it does so any Attack Roll of 1 counts as hitting the attacking model instead."
-    },
-    {
-      "Regex": "^Entropy$",
-      "Description": "Any unit that loses a wound to this weapon also loses up to 2 Command Points."
+      "Regex": "^Twin Linked$",
+      "Description": "Each time an attack is made with a\n[TWIN‑LINKED] weapon, you can re‑roll\nthe wound roll.\n"
     }
   ],
   "BattleSizeDefinitions": [

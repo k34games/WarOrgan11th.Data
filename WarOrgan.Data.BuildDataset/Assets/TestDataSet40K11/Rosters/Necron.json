@@ -3,7 +3,7 @@
   "Units": [
     {
       "Id": "NECRON_WARRIOR (WARLORD)",
-      "DisplayName": "Warrior",
+      "DisplayName": "Necron Warrior",
       "UnitComposition": {
         "ModelCompositions": [
           {
@@ -99,7 +99,13 @@
               "Id": "OC",
               "Value": "2"
             }
-          ]
+          ],
+          "BaseInfo":
+          {
+            "Size": "32mm",
+            "Type": 0
+            
+          }
         }
       ],
       "Weapons": [
@@ -132,7 +138,7 @@
                   "Value": "1"
                 }
               ],
-              "Keywords": "Assault"
+              "Keywords": "Lethal Hits, Rapid Fire 1"
             },
             {
               "Id": "Gauss Reaper",
@@ -159,7 +165,7 @@
                   "Value": "1"
                 }
               ],
-              "Keywords": "Assault"
+              "Keywords": "Lethal Hits"
             }
           ]
         },
@@ -192,7 +198,7 @@
                   "Value": "1"
                 }
               ],
-              "Keywords": "Assault, Shred"
+              "Keywords": ""
             }
             ]
             

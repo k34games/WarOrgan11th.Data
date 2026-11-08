@@ -53,13 +53,15 @@
         
       ],
       "Keywords": [
-        "Leader",
-        "Infantry"
+        "Infantry",
+        "Character"
       ],
       "FactionKeywords": [
         "WorldEaters"
       ],
-      "CoreAbilities": [],
+      "CoreAbilities": [
+        "Leader"
+      ],
       "StatLines": [
         {
           "StatName": "Master Of Executions",
@@ -121,7 +123,7 @@
                   "Value": "1"
                 }
               ],
-              "Keywords": "Assault"
+              "Keywords": "Pistol"
             }
           ]
         },
@@ -154,7 +156,7 @@
                   "Value": "2"
                 }
               ],
-              "Keywords": "Assault, Rapid Fire 1, Rending 1"
+              "Keywords": "Devastating Wounds, Precision"
             
             }
           ]

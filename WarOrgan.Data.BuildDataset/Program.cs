@@ -2,8 +2,8 @@ using WarOrgan.Data.BuildDataset.Utils;
 using WarOrgan.Data.BuildDataset.Validation;
 using WarOrgan.Model.DataSet;
 
-var defaultDatasetId = "Fracture";
-var defaultVersion = new Version(1, 1, 0, 0);
+var defaultDatasetId = "Custom Dataset 11th";
+var defaultVersion = new Version(1, 3, 2, 0);
 var defaultBuildDirectory = AppContext.BaseDirectory;
 
 var datasetInfo = new DataSetInfo(
