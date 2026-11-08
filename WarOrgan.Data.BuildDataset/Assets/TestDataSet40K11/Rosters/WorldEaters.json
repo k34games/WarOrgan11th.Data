@@ -103,6 +103,10 @@
               "DisplayName": "Bolt pistol",
               "Stats": [
                 {
+                  "Id": "Range",
+                  "Value": "12\""
+                },
+                {
                   "Id": "A",
                   "Value": "1"
                 },

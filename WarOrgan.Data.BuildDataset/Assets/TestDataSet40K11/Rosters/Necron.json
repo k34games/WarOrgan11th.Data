@@ -118,6 +118,10 @@
               "DisplayName": "Gauss Flayer",
               "Stats": [
                 {
+                  "Id": "Range",
+                  "Value": "24\""
+                },
+                {
                   "Id": "A",
                   "Value": "1"
                 },
@@ -144,6 +148,10 @@
               "Id": "Gauss Reaper",
               "DisplayName": "Gauss Reaper",
               "Stats": [
+                {
+                  "Id": "Range",
+                  "Value": "12\""
+                },
                 {
                   "Id": "A",
                   "Value": "2"
