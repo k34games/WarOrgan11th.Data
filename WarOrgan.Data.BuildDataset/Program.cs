@@ -13,7 +13,7 @@ var datasetInfo = new DataSetInfo(
     PublishDate: DateTime.UtcNow);
 
 // Setup paths
-var assetsFolder = Path.Combine(AppContext.BaseDirectory, "Assets", "Fracture").EnsureDirectoryExists();
+var assetsFolder = Path.Combine(AppContext.BaseDirectory, "Assets", "TestDataSet40K11").EnsureDirectoryExists();
 var outputFolder = Path.Combine(AppContext.BaseDirectory, "Output").EnsureDirectoryExists();
 var rostersFolder = Path.Combine(assetsFolder, "Rosters").EnsureDirectoryExists();
 
