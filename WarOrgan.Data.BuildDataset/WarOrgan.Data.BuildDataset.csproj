@@ -8,6 +8,18 @@
   <ItemGroup>
     <ProjectReference Include="..\WarOrgan.Data.Model\WarOrgan.Data.Model.csproj" />
     <None Update="Assets\**\*" CopyToOutputDirectory="PreserveNewest" />
+    <None Update="Assets\TestDataSet40K11\Rosters\Necron.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Assets\TestDataSet40K11\Rosters\WorldEaters.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Assets\TestDataSet40K11\DataSetDefinition.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Assets\TestDataSet40K11\README.md">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
 
 </Project>

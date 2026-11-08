@@ -1,0 +1,508 @@
+{
+  "Name": "Necron",
+  "Units": [
+    {
+      "Id": "NECRON_WARRIOR (WARLORD)",
+      "DisplayName": "Warrior",
+      "UnitComposition": {
+        "ModelCompositions": [
+          {
+            "ModelName": "Warrior",
+            "Limit": {
+              "Min": 10,
+              "Max": 20
+            },
+            "StatlineRef": "NecronWarrior",
+            "Wargear": [
+              {
+                "InitialWargear": [
+                  "Gauss Flayer",
+                  "Close combat Weapon"
+                ],
+                "Options": [
+                  {
+                    "Options": [
+                      {
+                        "Items": [
+                          "Gauss Reaper"
+                        ]
+                      }
+                    ],
+                    "Replaces": [
+                      "Gauss Flayer"
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "WargearDefinitions": [
+          {
+            "Key": "Gauss Flayer",
+            "DisplayName": "Gauss Flayer",
+            "Cost": 0
+          },
+          {
+            "Key": "Close combat Weapon",
+            "DisplayName": "Close combat Weapon",
+            "Cost": 0
+          },
+          {
+            "Key": "Gauss Reaper",
+            "DisplayName": "Gauss Reaper",
+            "Cost": 0
+          }
+        ]
+      },
+      "UnitAbilities": [
+        {
+          "Title": "Their Number is Legion:",
+          "Text": "Each time this unit’s Reanimation Protocols activate, you can re-roll the dice to see how many wounds are regenerated."
+        }
+      ],
+      "Infos": [
+      ],
+      "Keywords": [
+        "Battleline",
+        "Infantry"
+      ],
+      "FactionKeywords": [
+        "Necron"
+      ],
+      "CoreAbilities": [],
+      "StatLines": [
+        {
+          "StatName": "NecronWarrior",
+          "Stats": [
+            {
+              "Id": "M",
+              "Value": "5"
+            },
+            {
+              "Id": "T",
+              "Value": "4"
+            },
+            {
+              "Id": "S",
+              "Value": "4+"
+            },
+            {
+              "Id": "W",
+              "Value": "1"
+            },
+            {
+              "Id": "LD",
+              "Value": "7+"
+            },
+            {
+              "Id": "OC",
+              "Value": "2"
+            }
+          ]
+        }
+      ],
+      "Weapons": [
+        {
+          "Id": "Gauss Flayer",
+          "DisplayName": "Gauss Flayer",
+          "Weapons": [
+            {
+              "Id": "Gauss Flayer",
+              "DisplayName": "Gauss Flayer",
+              "Stats": [
+                {
+                  "Id": "A",
+                  "Value": "1"
+                },
+                {
+                  "Id": "BS",
+                  "Value": "3+"
+                },
+                {
+                  "Id": "S",
+                  "Value": "4"
+                },
+                {
+                  "Id": "AP",
+                  "Value": "0"
+                },
+                {
+                  "Id": "D",
+                  "Value": "0"
+                }
+              ],
+              "Keywords": "Assault"
+            },
+            {
+              "Id": "combat blade",
+              "DisplayName": "Combat Blade",
+              "Stats": [
+                {
+                  "Id": "Rng",
+                  "Value": "1\""
+                },
+                {
+                  "Id": "Att",
+                  "Value": "2"
+                },
+                {
+                  "Id": "Dmg",
+                  "Value": "4"
+                },
+                {
+                  "Id": "Prc",
+                  "Value": "0"
+                }
+              ],
+              "Keywords": "Assault"
+            }
+          ]
+        },
+        {
+          "Id": "SPECIALIST SIDEARMS",
+          "DisplayName": "Specialist Sidearms",
+          "Weapons": [
+            {
+              "Id": "spitfire",
+              "DisplayName": "Spitfire",
+              "Stats": [
+                {
+                  "Id": "Rng",
+                  "Value": "6\""
+                },
+                {
+                  "Id": "Att",
+                  "Value": "3"
+                },
+                {
+                  "Id": "Dmg",
+                  "Value": "5"
+                },
+                {
+                  "Id": "Prc",
+                  "Value": "1"
+                }
+              ],
+              "Keywords": "Assault, Shred"
+            },
+            {
+              "Id": "bonecrusher",
+              "DisplayName": "Bonecrusher",
+              "Stats": [
+                {
+                  "Id": "Rng",
+                  "Value": "1\""
+                },
+                {
+                  "Id": "Att",
+                  "Value": "3"
+                },
+                {
+                  "Id": "Dmg",
+                  "Value": "4"
+                },
+                {
+                  "Id": "Prc",
+                  "Value": "1"
+                }
+              ],
+              "Keywords": "Assault, Rapid Fire 1"
+            }
+          ]
+        },
+        {
+          "Id": "STANDARD WEAPONS",
+          "DisplayName": "Standard Weapons",
+          "Weapons": [
+            {
+              "Id": "scattergun",
+              "DisplayName": "Scattergun",
+              "Stats": [
+                {
+                  "Id": "Rng",
+                  "Value": "20\""
+                },
+                {
+                  "Id": "Att",
+                  "Value": "4"
+                },
+                {
+                  "Id": "Dmg",
+                  "Value": "3"
+                },
+                {
+                  "Id": "Prc",
+                  "Value": "0"
+                }
+              ]
+            },
+            {
+              "Id": "slammer",
+              "DisplayName": "Slammer",
+              "Stats": [
+                {
+                  "Id": "Rng",
+                  "Value": "10\""
+                },
+                {
+                  "Id": "Att",
+                  "Value": "4"
+                },
+                {
+                  "Id": "Dmg",
+                  "Value": "4"
+                },
+                {
+                  "Id": "Prc",
+                  "Value": "1"
+                }
+              ],
+              "Keywords": "Rending 1, Shred"
+            },
+            {
+              "Id": "cleaver",
+              "DisplayName": "Cleaver",
+              "Stats": [
+                {
+                  "Id": "Rng",
+                  "Value": "1\""
+                },
+                {
+                  "Id": "Att",
+                  "Value": "4"
+                },
+                {
+                  "Id": "Dmg",
+                  "Value": "4"
+                },
+                {
+                  "Id": "Prc",
+                  "Value": "0"
+                }
+              ],
+              "Keywords": "Assault"
+            }
+          ]
+        },
+        {
+          "Id": "GRENADES",
+          "DisplayName": "Grenades",
+          "Weapons": [
+            {
+              "Id": "he grenade",
+              "DisplayName": "HE Grenade",
+              "Stats": [
+                {
+                  "Id": "Rng",
+                  "Value": "8\""
+                },
+                {
+                  "Id": "Att",
+                  "Value": "3"
+                },
+                {
+                  "Id": "Dmg",
+                  "Value": "6"
+                },
+                {
+                  "Id": "Prc",
+                  "Value": "3"
+                }
+              ],
+              "Keywords": "Blast 1, Inaccurate, Grenade"
+            },
+            {
+              "Id": "freg grenade",
+              "DisplayName": "Freg Grenade",
+              "Stats": [
+                {
+                  "Id": "Rng",
+                  "Value": "8\""
+                },
+                {
+                  "Id": "Att",
+                  "Value": "3"
+                },
+                {
+                  "Id": "Dmg",
+                  "Value": "4"
+                },
+                {
+                  "Id": "Prc",
+                  "Value": "1"
+                }
+              ],
+              "Keywords": "Blast 2, Inaccurate, Grenade"
+            }
+          ]
+        },
+        {
+          "Id": "SPECIALIST WEAPONS",
+          "DisplayName": "Specialist Weapons",
+          "Weapons": [
+            {
+              "Id": "longshot",
+              "DisplayName": "Longshot",
+              "Stats": [
+                {
+                  "Id": "Rng",
+                  "Value": "32\""
+                },
+                {
+                  "Id": "Att",
+                  "Value": "2"
+                },
+                {
+                  "Id": "Dmg",
+                  "Value": "5"
+                },
+                {
+                  "Id": "Prc",
+                  "Value": "1"
+                }
+              ],
+              "Keywords": "Accurate, Destructive 2, Heavy"
+            },
+            {
+              "Id": "scorcher",
+              "DisplayName": "Scorcher",
+              "Stats": [
+                {
+                  "Id": "Rng",
+                  "Value": "6\""
+                },
+                {
+                  "Id": "Att",
+                  "Value": "4"
+                },
+                {
+                  "Id": "Dmg",
+                  "Value": "3"
+                },
+                {
+                  "Id": "Prc",
+                  "Value": "1"
+                }
+              ],
+              "Keywords": "Blast 1, Torrent, Rending 2"
+            },
+            {
+              "Id": "rocket pipe",
+              "DisplayName": "Rocket Pipe",
+              "Stats": [
+                {
+                  "Id": "Rng",
+                  "Value": "18\""
+                },
+                {
+                  "Id": "Att",
+                  "Value": "4"
+                },
+                {
+                  "Id": "Dmg",
+                  "Value": "6"
+                },
+                {
+                  "Id": "Prc",
+                  "Value": "2"
+                }
+              ],
+              "Keywords": "Inaccurate, Blast 1"
+            },
+            {
+              "Id": "buzzsaw",
+              "DisplayName": "Buzzsaw",
+              "Stats": [
+                {
+                  "Id": "Rng",
+                  "Value": "1\""
+                },
+                {
+                  "Id": "Att",
+                  "Value": "3"
+                },
+                {
+                  "Id": "Dmg",
+                  "Value": "5"
+                },
+                {
+                  "Id": "Prc",
+                  "Value": "3"
+                }
+              ],
+              "Keywords": "Assault, Rapid Fire 1, Destructive 2"
+            },
+            {
+              "Id": "plasma destabiliser",
+              "DisplayName": "Plasma Destabiliser",
+              "Stats": [
+                {
+                  "Id": "Rng",
+                  "Value": "20\""
+                },
+                {
+                  "Id": "Att",
+                  "Value": "3"
+                },
+                {
+                  "Id": "Dmg",
+                  "Value": "7"
+                },
+                {
+                  "Id": "Prc",
+                  "Value": "2"
+                }
+              ],
+              "Keywords": "Volatile"
+            },
+            {
+              "Id": "crushing claw",
+              "DisplayName": "Crushing Claw",
+              "Stats": [
+                {
+                  "Id": "Rng",
+                  "Value": "1\""
+                },
+                {
+                  "Id": "Att",
+                  "Value": "3"
+                },
+                {
+                  "Id": "Dmg",
+                  "Value": "6"
+                },
+                {
+                  "Id": "Prc",
+                  "Value": "2"
+                }
+              ],
+              "Keywords": "Assault, Destructive 2"
+            }
+          ]
+        }
+      ],
+      "Points": [
+        {
+          "ModelCount" : 10,
+          "Cost" : 95
+        },
+        {
+          "ModelCount": 20,
+          "Cost": 190
+        }
+      ]
+    }
+  ],
+  "ArmyRules": [
+    {
+      "Title": "Reanimation Protocols",
+      "Text": "If your Army Faction is NECRONS, at the end of your Command phase, each friendly unit with this ability that is on the battlefield activates its Reanimation Protocols:\n\nWhen a unit’s Reanimation Protocols activate, that unit heals D3 wounds."
+    }
+  ],
+  "Detachments":
+  {
+    "Title": "Awakened Dynasty",
+    "Text" : "Command Protocols: While a NECRONS CHARACTER model is leading this unit, each time a model in this unit makes an attack, add 1 to the Hit roll.\n"
+  }
+}
